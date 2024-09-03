@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hipeme Softphone Widget</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <phone-widget
+        callback='__CALLBACK__'
+        :phone-status-styles="{
+          width: '__WIDTH__',
+          height: '__HEIGHT__',
+          background: '__BACKGROUND__',
+          image: {
+            width: '__IMAGE_WIDTH__',
+            height: '__IMAGE_HEIGHT__',
+            src: '__IMAGE_SRC__',
+          },
+        }"
+      >
+    </phone-widget> 
+  </div>
+    <script src="./main.js"></script>
+    <script type="module">
+      const { PhoneWidget } = MyVueComponents;
+
+      const app = Vue.createApp()
+      app.component('PhoneWidget', PhoneWidget)
+      app.mount("#app");
+    </script>
+  </body>
+</html>

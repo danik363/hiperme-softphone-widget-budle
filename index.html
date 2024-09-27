@@ -5,23 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hipeme Softphone Widget</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="phone-widget.css">
   </head>
   <body>
     <div id="app">
       <phone-widget
-        callback='__CALLBACK__'
-        :phone-status-styles="{
-          width: '__WIDTH__',
-          height: '__HEIGHT__',
-          background: '__BACKGROUND__',
-          image: {
-            width: '__IMAGE_WIDTH__',
-            height: '__IMAGE_HEIGHT__',
-            src: '__IMAGE_SRC__',
-          },
+        :callback="'107660e386e1ff-0e2f4b1d3a4ed1-bbaf50e731a768'"
+        :phone-widget-buttons-params="{
+          image:
+            'https://media.licdn.com/dms/image/D4D0BAQF45HGdgBzUJA/company-logo_200_200/0/1666014403929/hiperpbx_logo?e=2147483647&v=beta&t=O6BjUooYVB7axBnEEH_goPk2XQHT58zoQCKWN0nikD0',
+          textInWidget: '',
         }"
-      >
-    </phone-widget> 
+      ></phone-widget> 
   </div>
     <script src="./main.js"></script>
     <script type="module">

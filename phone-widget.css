@@ -1,0 +1,24 @@
+:root{
+  --widget-btn-image-size: 40px;
+  --widget-btn-idle-background: #A7C71D;
+  --widget-btn-call-background: #A7C71D ;
+  --widget-btn-calling-background: #A7C71D;
+  --widget-btn-size: 70px;
+
+  --widget-background: linear-gradient(
+      180deg,
+      rgba(167, 199, 29, 0.6) 0%,
+      rgba(167, 199, 29, 0.5) 35%,
+      rgba(167, 199, 29, 0.3) 70%,
+      rgba(233, 238, 244, 1) 100%
+  );
+  --btn-call-background: rgb(243, 33, 33);
+
+  --btn-calling-background: rgba(212, 225, 87, 1);
+
+  --btn-idle-background: rgba(167, 199, 29, 1);
+
+  --btn-size: 50px;
+
+  --font-family: sans-serif, "Gill Sans";
+}

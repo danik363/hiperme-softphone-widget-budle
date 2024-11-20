@@ -10,36 +10,12 @@
   <body>
     <div id="app">
       <phone-widget
-        :connection-data="parseData(connectionDataJson)"
-        :phone-widget-params="parseData(phoneWidgetParamsJson)"
+        :callback="'__CALLBACK__'"
       ></phone-widget>
   </div>
     <script src="https://cdn.jsdelivr.net/gh/danik363/hiperme-softphone-widget-budle@latest/main.js?cache-clear"></script>
     <script type="module">
       const { PhoneWidget } = MyVueComponents;
-
-      const connectionDataJson = `__CONNECTION_DATA__`;
-      const phoneWidgetParamsJson = `__PHONE_WIDGET_PARAMS__`;
-
-      const app = Vue.createApp({
-        data() {
-          return {
-            connectionDataJson,
-            phoneWidgetParamsJson,
-          };
-        },
-        methods: {
-          parseData(dataJson) {
-            try {
-              return JSON.parse(dataJson);
-            } catch (error) {
-              console.error("Error parsing JSON:", error);
-              return {};
-            }
-          },
-        },
-      });
-
       app.component("phone-widget", PhoneWidget);
       app.mount("#app");
     </script>

@@ -16,8 +16,8 @@
     <script src="https://cdn.jsdelivr.net/gh/danik363/hiperme-softphone-widget-budle@latest/main.js?cache-clear"></script>
     <script type="module">
       const { PhoneWidget } = MyVueComponents;
-      app.component("phone-widget", PhoneWidget);
-      app.mount("#app");
+      const app = Vue.createApp()
+      app.component('PhoneWidget', PhoneWidget)
     </script>
   </body>
 </html>

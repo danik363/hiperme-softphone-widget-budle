@@ -7,7 +7,8 @@ __STYLES__
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/danik363/hiperme-softphone-widget-budle@latest/main.js?cache-clear"></script>
 <script type="module">
-  const { PhoneWidget } = MyVueComponents;
-  const app = Vue.createApp()
-  app.component('PhoneWidget', PhoneWidget)
+    const { PhoneWidget } = MyVueComponents;
+    const app = Vue.createApp({});
+    app.component('PhoneWidget', PhoneWidget);
+    app.mount('#app');
 </script>

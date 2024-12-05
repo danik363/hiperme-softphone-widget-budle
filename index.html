@@ -4,6 +4,10 @@ __STYLES__
     :callback="'__CALLBACK__'"
   ></phone-widget>
 </div>
+<script>
+  const stylesheet = document.getElementById("dynamicStylesheet");
+  stylesheet.href = `${stylesheet.href}?no-cache=${new Date().toISOString()}`;
+</script>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 __SCRIPT__
 <script type="module">
